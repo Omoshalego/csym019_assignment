@@ -3,10 +3,10 @@
 	"recipe":[
 	    {
 	         "title":"Rhubarb & gingernut cheesecake",
-	        "prep":"20 mins",
+	        "prep":20,
 	        "Easy":"More effort",
 	        "Serves":"8-10",
-	        "Cook": "25 mins",
+	        "Cook": 25,
 	        "Ingredients":[
 	            "500g forced rhubarb , chopped into 4cm lengths",
 	            "150g caster sugar","1 blood orange , zested and juiced",
@@ -23,17 +23,15 @@
 	              "Butter a 20cm springform cake tin and line it with baking parchment. To make the base, put the biscuits in a bag and smash them with a rolling pin, or put them in a food processor and grind to crumbs. Tip into a mixing bowl, and stir in a pinch of sea salt. Pour the butter over the crumbs. Mix it together with a fork and tip it into the tin. Tap the side of the tin with your hand to even the crumbs out, and gently compress it with the back of a large spoon until it’s packed in and level. You want it fairly well packed so that it holds together. Put in the fridge to chill.",  
 	               "To make the filling, put the cheese and quark or yogurt into a mixing bowl, or the bowl of a stand mixer, and beat it together. Mix until combined and thickened, then fold through the rhubarb purée.",  	          
 	              "Pile the mixture on top of the biscuit base and smooth it down. Cover with cling film and chill overnight until set. Remove the rhubarb from its syrup with a slotted spoon, tip the syrup into a pan and bring to the boil. Reduce for about 3-5 mins until the syrup is more concentrated. Allow to cool.",  	            
-	              "Carefully remove the cheesecake from its tin. Pile the rhubarb on top and drizzle over some syrup (you can save the rest for drizzling over porridge), then scatter with the pistachios to serve."
-	           
-	        ]
-	        
+	              "Carefully remove the cheesecake from its tin. Pile the rhubarb on top and drizzle over some syrup (you can save the rest for drizzling over porridge), then scatter with the pistachios to serve."	           
+	        ]	        
 	    },
 	    {
 	        "title":"Caponata pasta",
-	        "prep":"2 mins",
+	        "prep":2,
 	        "Easy":"Easy",
 	        "Serves":"4",
-	        "Cook": "18 mins",
+	        "Cook": 18,
 	        "Ingredients":[
 	            "4 tbsp olive oil (or use the oil from your chargrilled veg, see below)",
 	            "1 large onion, finely chopped",
@@ -54,6 +52,113 @@
 	           
 	        ]
 	        
-	    }	   
+	    },
+	     {
+	        "title":"Caponata pasta",
+	        "prep":2,
+	        "Easy":"Easy",
+	        "Serves":"4",
+	        "Cook": 18,
+	        "Ingredients":[
+	            "4 tbsp olive oil (or use the oil from your chargrilled veg, see below)",
+	            "1 large onion, finely chopped",
+	            "4 garlic cloves, finely sliced",
+	            "250g chargrilled Mediterranean veg (peppers and aubergines, if possible) from a jar, pot or deli counter, drained if in oil (you can use this oil in place of the olive oil) and roughly chopped",
+	            "400g can chopped tomatoes",
+	            "1 tbsp small capers",
+	            "2 tbsp raisins",
+	            "350g rigatoni, penne or another short pasta shape\n",
+	            "bunch basil leaves, picked",
+	            "parmesan (or vegetarian alternative), shaved, to serve"
+	           ],
+	        "Method": [
+	            
+	               "Heat the oil in a large pan and cook the onion for 8-10 mins until starting to caramelise (or for longer if you have time – the sweeter the better). Add the garlic for the final 2 mins of cooking time.",  
+	               "Tip in the mixed veg, tomatoes, capers and raisins. Season well and simmer, uncovered, for 10 mins, or until you have a rich sauce.", 	            
+	              "Meanwhile, boil the kettle. Pour the kettleful of water into a large pan with a little salt and bring back to the boil. Add the pasta and cook until tender with a little bite, then drain, reserving some of the pasta water. Tip the pasta into the sauce, adding a splash of pasta water if it needs loosening. Scatter with the basil leaves and parmesan, if you like, and serve straight from the pan"  
+	           
+	        ]
+	        
+	    },
+	     {
+	        "title":"Caponata pasta",
+	        "prep":2,
+	        "Easy":"Easy",
+	        "Serves":"4",
+	        "Cook": 18,
+	        "Ingredients":[
+	            "4 tbsp olive oil (or use the oil from your chargrilled veg, see below)",
+	            "1 large onion, finely chopped",
+	            "4 garlic cloves, finely sliced",
+	            "250g chargrilled Mediterranean veg (peppers and aubergines, if possible) from a jar, pot or deli counter, drained if in oil (you can use this oil in place of the olive oil) and roughly chopped",
+	            "400g can chopped tomatoes",
+	            "1 tbsp small capers",
+	            "2 tbsp raisins",
+	            "350g rigatoni, penne or another short pasta shape\n",
+	            "bunch basil leaves, picked",
+	            "parmesan (or vegetarian alternative), shaved, to serve"
+	           ],
+	        "Method": [
+	            
+	               "Heat the oil in a large pan and cook the onion for 8-10 mins until starting to caramelise (or for longer if you have time – the sweeter the better). Add the garlic for the final 2 mins of cooking time.",  
+	               "Tip in the mixed veg, tomatoes, capers and raisins. Season well and simmer, uncovered, for 10 mins, or until you have a rich sauce.", 	            
+	              "Meanwhile, boil the kettle. Pour the kettleful of water into a large pan with a little salt and bring back to the boil. Add the pasta and cook until tender with a little bite, then drain, reserving some of the pasta water. Tip the pasta into the sauce, adding a splash of pasta water if it needs loosening. Scatter with the basil leaves and parmesan, if you like, and serve straight from the pan"  
+	           
+	        ]
+	        
+	    },
+	     {
+	        "title":"Caponata pasta",
+	        "prep":2,
+	        "Easy":"Easy",
+	        "Serves":"4",
+	        "Cook": 18,
+	        "Ingredients":[
+	            "4 tbsp olive oil (or use the oil from your chargrilled veg, see below)",
+	            "1 large onion, finely chopped",
+	            "4 garlic cloves, finely sliced",
+	            "250g chargrilled Mediterranean veg (peppers and aubergines, if possible) from a jar, pot or deli counter, drained if in oil (you can use this oil in place of the olive oil) and roughly chopped",
+	            "400g can chopped tomatoes",
+	            "1 tbsp small capers",
+	            "2 tbsp raisins",
+	            "350g rigatoni, penne or another short pasta shape\n",
+	            "bunch basil leaves, picked",
+	            "parmesan (or vegetarian alternative), shaved, to serve"
+	           ],
+	        "Method": [
+	            
+	               "Heat the oil in a large pan and cook the onion for 8-10 mins until starting to caramelise (or for longer if you have time – the sweeter the better). Add the garlic for the final 2 mins of cooking time.",  
+	               "Tip in the mixed veg, tomatoes, capers and raisins. Season well and simmer, uncovered, for 10 mins, or until you have a rich sauce.", 	            
+	              "Meanwhile, boil the kettle. Pour the kettleful of water into a large pan with a little salt and bring back to the boil. Add the pasta and cook until tender with a little bite, then drain, reserving some of the pasta water. Tip the pasta into the sauce, adding a splash of pasta water if it needs loosening. Scatter with the basil leaves and parmesan, if you like, and serve straight from the pan"  	           
+	        ]
+	        
+	    },
+	     {
+	        "title":"Caponata pasta",
+	        "prep":2,
+	        "Easy":"Easy",
+	        "Serves":"4",
+	        "Cook": 18,
+	        "Ingredients":[
+	            "4 tbsp olive oil (or use the oil from your chargrilled veg, see below)",
+	            "1 large onion, finely chopped",
+	            "4 garlic cloves, finely sliced",
+	            "250g chargrilled Mediterranean veg (peppers and aubergines, if possible) from a jar, pot or deli counter, drained if in oil (you can use this oil in place of the olive oil) and roughly chopped",
+	            "400g can chopped tomatoes",
+	            "1 tbsp small capers",
+	            "2 tbsp raisins",
+	            "350g rigatoni, penne or another short pasta shape\n",
+	            "bunch basil leaves, picked",
+	            "parmesan (or vegetarian alternative), shaved, to serve"
+	           ],
+	        "Method": [
+	            
+	               "Heat the oil in a large pan and cook the onion for 8-10 mins until starting to caramelise (or for longer if you have time – the sweeter the better). Add the garlic for the final 2 mins of cooking time.",  
+	               "Tip in the mixed veg, tomatoes, capers and raisins. Season well and simmer, uncovered, for 10 mins, or until you have a rich sauce.", 	            
+	              "Meanwhile, boil the kettle. Pour the kettleful of water into a large pan with a little salt and bring back to the boil. Add the pasta and cook until tender with a little bite, then drain, reserving some of the pasta water. Tip the pasta into the sauce, adding a splash of pasta water if it needs loosening. Scatter with the basil leaves and parmesan, if you like, and serve straight from the pan"  	           
+	        ]
+	        
+	    }
+	    	   
 	]
 }
