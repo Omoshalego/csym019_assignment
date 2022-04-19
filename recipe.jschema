@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Schema title",
+    "description": "Description of the schema",
+    "type": "object",
+    "properties": {
+        "recipe": {
+            "description": "The propertyName description",
+            "type": "array",
+            "items": {"$ref": "#/definitions/recipe"}
+        }
+    },
+    "definitions": {
+        "recipe": {
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "maxLength": 200,
+                    "minLength": 10
+                },
+                "prep": {"type": "string"},
+                "Cook": {"type": "string"},
+                "Serves": {"type": "string"},
+                "Easy": {"type": "string"},
+                "Ingredients": {
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": false,
+                    "items": true
+                },
+                "Method": {
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": false,
+                    "items": true
+                }
+            },
+            "required": [
+                "title",
+                "prep",
+                "Cook",
+                "Serves",
+                "Ingredients",
+                "Method"
+            ]
+        }
+    }
+}
