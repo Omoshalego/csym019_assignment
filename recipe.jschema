@@ -19,8 +19,8 @@
                     "maxLength": 200,
                     "minLength": 10
                 },
-                "prep": {"type": "string"},
-                "Cook": {"type": "string"},
+                "prep": {"type": "integer"},
+                "Cook": {"type": "integer"},
                 "Serves": {"type": "string"},
                 "Easy": {"type": "string"},
                 "Ingredients": {
