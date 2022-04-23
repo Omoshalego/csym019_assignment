@@ -34,6 +34,10 @@
                     "minItems": 1,
                     "uniqueItems": false,
                     "items": true
+                },
+                "Nutrition_per_serve": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/Nutrition_per_serve"}
                 }
             },
             "required": [
@@ -44,6 +48,20 @@
                 "Ingredients",
                 "Method"
             ]
+        },
+        "Nutrition_per_serve": {
+            "properties": {
+                "kcal": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "fibre": {"type": "integer"},
+                "salt": {"type": "integer"},
+                "saturate": {"type": "integer"},
+                "carbs": {"type": "integer"},
+                "fat": {"type": "integer"},
+                "protein": {"type": "integer"}
+            }
         }
     }
 }

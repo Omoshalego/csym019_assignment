@@ -1,5 +1,5 @@
 {
-    "$schema": "recipe.jschema",
+    "$schema": "file:/C:/MASTER_COURSE_MATERIAL_TERM2/Internet_Programming/CSYM019_ASSIGNMENT/recipe.jschema",
 	"recipe":[
 	    {
 	         "title":"Rhubarb & gingernut cheesecake",
@@ -9,14 +9,14 @@
 	        "Cook": 25,
 			"Nutrition per serve":[
              {
-				 "kcal":"",
-				 "fat":"",
-				 "saturate":"",
-				 "carbs":"",
-				 "sugars":"",
-				 "fibre":"",
-				 "protein":"",
-				 "salt":""
+				 "kcal":1,
+				 "fat":2,
+				 "saturate":3,
+				 "carbs":4,
+				 "sugars":5,
+				 "fibre":6,
+				 "protein":7,
+				 "salt":8
 
 			 }
 			],
@@ -109,6 +109,7 @@
 	            "bunch basil leaves, picked",
 	            "parmesan (or vegetarian alternative), shaved, to serve"
 	           ],
+
 	        "Method": [
 	            
 	               "Heat the oil in a large pan and cook the onion for 8-10 mins until starting to caramelise (or for longer if you have time – the sweeter the better). Add the garlic for the final 2 mins of cooking time.",  
@@ -194,9 +195,9 @@
 	               "Heat the oil in a large pan and cook the onion for 8-10 mins until starting to caramelise (or for longer if you have time – the sweeter the better). Add the garlic for the final 2 mins of cooking time.",  
 	               "Tip in the mixed veg, tomatoes, capers and raisins. Season well and simmer, uncovered, for 10 mins, or until you have a rich sauce.", 	            
 	              "Meanwhile, boil the kettle. Pour the kettleful of water into a large pan with a little salt and bring back to the boil. Add the pasta and cook until tender with a little bite, then drain, reserving some of the pasta water. Tip the pasta into the sauce, adding a splash of pasta water if it needs loosening. Scatter with the basil leaves and parmesan, if you like, and serve straight from the pan"  	           
-	        ]
-	        
+	        ]    
 	    },
+		
 	     {
 	        "title":"Caponata pasta",
 	        "prep":2,
@@ -216,6 +217,7 @@
    
 				}
 			   ],
+
 	        "Ingredients":[
 	            "4 tbsp olive oil (or use the oil from your chargrilled veg, see below)",
 	            "1 large onion, finely chopped",
@@ -228,6 +230,7 @@
 	            "bunch basil leaves, picked",
 	            "parmesan (or vegetarian alternative), shaved, to serve"
 	           ],
+
 	        "Method": [
 	            
 	               "Heat the oil in a large pan and cook the onion for 8-10 mins until starting to caramelise (or for longer if you have time – the sweeter the better). Add the garlic for the final 2 mins of cooking time.",  
