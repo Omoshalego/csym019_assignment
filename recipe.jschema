@@ -61,7 +61,16 @@
                 "carbs": {"type": "integer"},
                 "fat": {"type": "integer"},
                 "protein": {"type": "integer"}
-            }
+            },
+            "required": [
+                "kcal",
+                "fibre",
+                "salt",
+                "saturate",
+                "carbs",
+                "fat",
+                "protein"
+            ]
         }
     }
 }
