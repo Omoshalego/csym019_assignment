@@ -8,23 +8,28 @@ function updateRecipe(){
                 type:"GET",
                 dataType:"json",
                 success:function(response){
+                    
                     let recipeinfo = "";
-                    $("#recipe").html("");
-                    $.each(response.recipe,function(index){
-                        recipeinfo +="<tr class = 'score'><td>" +
-                        response.recipe[index].title + 
-                        response.recipe[index].prep + "<td><td>" +
-                        response.recipe[index].Cook + "<td><td>" +
-                        "</td></tr><tr><td>" +
-                        response.recipe[index].Serves +
-                        "</td></tr><tr><td>" +
-                        response.recipe[index].Easy +
-                        "</td></tr><tr><td>" +
-                        response.recipe[index].Ingredients[index]+
-                        "</td></tr><tr><td>" +
-                        response.recipe[index].Method[index]
-                        "</td><td></td><td></td></tr>";
+                    $("#recipe").html("");                  
+                    $.each(response.recipe,function(index){ 
+
+                      recipeinfo +="<main><h3>" +
+                      response.recipe[index].title +
+                       "</h3> <navs><p><strong>" + 
+
+                       "Prep: "+ response.recipe[index].prep + " mins" +                      
+                       "\t\tCook: "+response.recipe[index].Cook + " mins"+                    
+                       "\t\tServes: "+response.recipe[index].Serves +                      
+                       "\t\tEasy: "+ response.recipe[index].Easy +
+
+                        "</strong></p></navs><h3>Ingredient</h3>"+ 
+                        response.recipe[index].Ingredients +
+
+                        "</main><aside><h3>Method " + (index +1) +
+                         "</h3><p>"+ response.recipe[index].Method +
+                        "</p></aside>";                  
                     });
+             
                     $("#recipe").append( recipeinfo);
                     updateRecipe();
                 },
@@ -72,7 +77,6 @@ function updateRecipe(){
             });
         }, 250);
     }) ();*/
-
 
 
     
