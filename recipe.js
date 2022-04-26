@@ -11,23 +11,75 @@ function updateRecipe(){
                     
                     let recipeinfo = "";
                     $("#recipe").html("");                  
-                    $.each(response.recipe,function(index){ 
+                    $.each(response.recipe,function(index,item){ 
+                        var ingredientList = item.Ingredients; 
+                        var ingredientOrder ="";
 
-                      recipeinfo +="<main><h3>" +
-                      response.recipe[index].title +
-                       "</h3> <navs><p><strong>" + 
+                        var arrayOfIngredient=[];
 
-                       "Prep: "+ response.recipe[index].prep + " mins" +                      
-                       "\t\tCook: "+response.recipe[index].Cook + " mins"+                    
-                       "\t\tServes: "+response.recipe[index].Serves +                      
-                       "\t\tEasy: "+ response.recipe[index].Easy +
+                        var methodList = item.Method; 
+                        var methodOrder ="";
 
-                        "</strong></p></navs><h3>Ingredient</h3>"+ 
-                        response.recipe[index].Ingredients +
+                        var arrayOfMethod=[];
 
-                        "</main><aside><h3>Method " + (index +1) +
-                         "</h3><p>"+ response.recipe[index].Method +
-                        "</p></aside>";                  
+                        $.each(ingredientList, function(i, eachIngredient) {
+                            ingredientOrder =eachIngredient;                           
+                            arrayOfIngredient += "<tr><td>"+ ingredientOrder+"</tr></td>";
+                             });
+
+                             $.each(methodList, function(i, eachMethod) {
+                                methodOrder =eachMethod;                           
+                                arrayOfMethod +=  "<tr><td align='center' colspan='3' ><h3>Step: " +[i +1]  +
+                                  "<h3></td></tr><tr><td>"+ methodOrder+"</tr></td>";
+                                 });
+                        
+                       // });
+                      recipeinfo +="<tr class ='recipes'><td><h2>" +
+
+                      response.recipe[index].title + "</h2></td><td>"+
+                      
+                    //   response.recipe[index].Image + "</td></tr>" +
+                     
+
+                      "<tr><td>"+
+
+                   "Prep: "+ response.recipe[index].prep + " mins" +
+                   
+                     "\t\tCook: "+response.recipe[index].Cook + " mins" + 
+                     
+                     "\t\tServes: "+response.recipe[index].Serves + 
+                     "\t\tEasy: "+ response.recipe[index].Easy  +
+                     "</td></tr>" +
+
+                     "<tr><td><h3>Ingredient </h3></td></tr>" + arrayOfIngredient +
+
+                     "<tr><td align='center' colspan='3'><h3>Method<h3></td></tr>"
+                     + arrayOfMethod
+                  
+                        
+                    
+                   //  });​
+                   // "<tr><td>"+ ork+"<tr><td>"
+                      // });
+                    //  $.each(response.recipe[index].Ingredients,function(index, val){
+                    //  "<tr><td>"+ val +"<tr><td>" 
+                   
+                    //  });
+                   
+                   
+                  
+                     
+                    //    "Prep: "+ response.recipe[index].prep + " mins" +"</td><td>"+                     
+                    //    "\t\tCook: "+response.recipe[index].Cook + " mins"+                    
+                    //    "\t\tServes: "+response.recipe[index].Serves +                      
+                    //    "\t\tEasy: "+ response.recipe[index].Easy +
+
+                    //     "</td><td>Ingredient"+ 
+                    //     response.recipe[index].Ingredients +
+
+                    //     "</td><td>Method " + (index +1) +
+                    //      "</td><td>"+ response.recipe[index].Method +
+                    //     "</td><td>";                  
                     });
              
                     $("#recipe").append( recipeinfo);
