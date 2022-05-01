@@ -15,11 +15,19 @@ function updateRecipe(){
                     $.each(response.recipe,function(index,item){ 
                         var ingredientList = item.Ingredients; 
                         var ingredientOrder ="";
+                        
+                        var nutrition =item.Nutrition_per_servem;
+                        var nutrionOrder ="";
+                        var arrayaOfNutrition =[];
+                      
+
 
                         var arrayOfIngredient=[];
 
                         var methodList = item.Method; 
                         var methodOrder ="";
+                        var nutritionList = "";
+                      
 
                         var arrayOfMethod=[];
 
@@ -28,11 +36,18 @@ function updateRecipe(){
                             arrayOfIngredient += "<tr><td>" + [i+1] +")  "+ ingredientOrder+"</tr></td>";
                              });
 
+                             $.each(nutrition, function(i, eachNutrition) {
+                                nutrionOrder =eachNutrition;                           
+                                arrayaOfNutrition += "<tr><td>" + [i+1] +")  "+ nutrionOrder+"</td></tr>";
+                                 });
+
                              $.each(methodList, function(i, eachMethod) {
                                 methodOrder =eachMethod;                           
                                 arrayOfMethod +=  "<tr><td><strong>Step: " +[i +1]  +
                                   "<strong></td></tr><tr><td>"+ methodOrder+"</td></tr><br>";
                                  });
+
+                    nutritionList += "<tr><td><h3>Nutrtion </h3></td></tr>"+  arrayaOfNutrition;
                         
                       methods += "<tr><td><h3>Method </h3></td></tr>"+ arrayOfMethod;
                       recipeinfo +="<tr class ='recipes'><td><h2>" +
@@ -59,6 +74,9 @@ function updateRecipe(){
                     });
                     $("#method").append( methods);
                     $("#recipe").append( recipeinfo);
+                    $("#nutrition").append(nutritionList);
+
+
                     updateRecipe();
                 },
                 error:function(){
