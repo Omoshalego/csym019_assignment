@@ -7,8 +7,8 @@
 	        "Easy":"More effort",
 	        "Serves":"8-10",
 	        "Cook": 25,
-			"Image": "Resources/RecipeIcons/breakfast.png",
-			"Nutrition_per_serve":[
+			"Image": "sources/RecipeIcons/breakfast.png",
+			"Nutrition":
              {
 				 "kcal":466,
 				 "fat":34,
@@ -20,7 +20,7 @@
 				 "salt":0.5
 
 			 }
-			],
+			,
 	        "Ingredients":[
 	            "500g forced rhubarb , chopped into 4cm lengths",
 	            "150g caster sugar","1 blood orange , zested and juiced",
