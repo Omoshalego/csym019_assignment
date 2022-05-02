@@ -4,15 +4,17 @@ $(document).ready(
         setTimeout(
             function(){
                 $.ajax({
-                    url:"recipeg.json",
+                    url:"recipes.json",
                     type:"GET",
                     dataType:"json",
                     success:function(response){
                         
                         let recipeinfo = "";
                         var arrayOfMethod=[];
+                        var methods ="";
                         $("#method").html("")
-                        $("#recipe").html("");                  
+                        $("#recipe").html(""); 
+                                         
                         $.each(response.recipe,function(index,item){ 
                             var ingredientList = item.Ingredients; 
                             var methodList = item.Method; 
@@ -44,7 +46,7 @@ $(document).ready(
                                       "<strong></td></tr><tr><td>"+ methodOrder+"</td></tr><br>";
                                       });
 
-                                     // methods += "<tr><td><h3>Method </h3></td></tr>"+ arrayOfMethod;
+                                     methods += "<tr><td><h3>Method </h3></td></tr>"+ arrayOfMethod;
                                                         
                                 arrayaOfNutrition += 
 
@@ -106,7 +108,7 @@ $(document).ready(
                         //  "<tr><td align='center' colspan='3'><h3>Method<h3></td></tr>"
                         //  + arrayOfMethod                
                         });
-                        $("#method").append(arrayOfMethod);
+                        $("#method").append(methods);
                         $("#recipe").append( recipeinfo);
                        // $("#nutrition").append(nutritionList);
     
