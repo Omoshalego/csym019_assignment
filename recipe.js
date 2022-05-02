@@ -116,7 +116,7 @@ $(document).ready(
                         updateRecipe();
                     },
                     error:function(){
-                        $("#info").html("<p>An error has occured</p>");
+                        $("#info").html("<p>An Error has occured</p>");
                     }
                 });
             }, 250);
