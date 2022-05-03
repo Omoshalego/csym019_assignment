@@ -11,12 +11,12 @@ $(document).ready(
              success:function(response){
                         
                       let recipeinfo = "";
-                      var arrayOfMethod=[];
                       var methods ="";
                       $("#method").html("")
                       $("#recipe").html(""); 
                                          
                 $.each(response.recipe,function(index,item){ 
+
                     var ingredientList = item.Ingredients; 
                     var methodList = item.Method; 
                     var ingredientOrder ="";
@@ -26,11 +26,13 @@ $(document).ready(
                     var NutritionName = "";
                   
                     var arrayOfIngredient=[];
+                    var arrayOfMethod=[];
+                    
                     var methodOrder ="";
                     var nutritionList = "";
            
             $.each(ingredientList, function(i, eachIngredient) {
-                  ingredientOrder =eachIngredient;                           
+                      ingredientOrder =eachIngredient; 
                   arrayOfIngredient += "<tr><td>" + [i+1] +")  "+ ingredientOrder+"</tr></td>";
                     });
 
@@ -70,7 +72,7 @@ $(document).ready(
 
            recipeinfo +="<tr class ='recipes'><td><h2>" +
                         response.recipe[index].title + "</h2></td><td>"+                        
-                        //   response.recipe[index].Image + "</td></tr>" +
+                         "<img src='" + response.recipe[index].Image + "'/></td></tr>" +
                           "<tr><td>"+
     
                          "Prep: "+ response.recipe[index].prep + " mins" +   
@@ -83,7 +85,8 @@ $(document).ready(
                          arrayOfIngredient + 
 
                          "<tr><td><h3>Nutrition: Per Serving </h3></td></tr>"+
-                          NutritionName +nutritionList
+                          NutritionName +nutritionList +
+                          "<hr>"
                         });
 
             $("#method").append(methods);

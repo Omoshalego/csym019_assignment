@@ -1,4 +1,4 @@
-/* body {
+body {
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: auto;
@@ -42,9 +42,9 @@ nav > ul {
     padding: 0;
     border-right: 2%;
     border-color: whitesmoke;
-    border-style: solid; */
+    border-style: solid;
     /*width: 10%;*/
-    /* background-color: whitesmoke;
+    background-color: whitesmoke;
   }
   
 nav > ul li a {
@@ -52,10 +52,10 @@ nav > ul li a {
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
-} */
+}
   
 /* Change the link color on hover */
-/* nav > ul li a:hover {
+nav > ul li a:hover {
     background-color: #555;
     color: whitesmoke;
 }
@@ -106,7 +106,7 @@ footer {
 }
 
 /* Change the link color on hover */
-/* .addmore > input:hover {
+.addmore > input:hover {
     display:block;
     float: left;
     margin: 0 2em 2em 2em;
@@ -114,52 +114,4 @@ footer {
     text-decoration: none;
     background-color: #555;
     color: whitesmoke;
-} */ 
-header {
-    background-color: blue;
-    color: white;
-    padding: 1em;
-    
-    }
-    nav {
-    background-color:  darkgreen;;
-   overflow: auto;
-      
-    }
-
-    nav a {
-       display: block;
-       float: left;
-       width: 120px; 
-       padding: 1em; 
-       text-align: center;
-       color: white;
-        }
-     div{
-            overflow: auto;
-        }
-   
-     div main, aside{
-            display: inline;
-            float: left;
-        }
-
-    main  {
-    background-color: rgb(255, 255, 255);
-    padding: 1em;
-    color: rgb(0, 0, 0);
-    width: 47%;  
-    }
-
-    aside {
-    background-color: rgb(255, 255, 255);
-    padding: 1em;
-    width: 47%;  
-    }
-    
-    footer {
-    background-color: darkgreen;
-    padding: 1em;
-    color: white;
-
-    }
+}
