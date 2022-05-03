@@ -68,7 +68,7 @@ header .y {
         }
 
     strong,h3 {
-            color:   darkgreen;
+        color: #014108;
            
               
             }
@@ -106,6 +106,6 @@ header .y {
     footer {
     background-color: darkgreen;
     padding: 1em;
-    color: white;
+    color: rgb(249, 11, 11);
 
     }
