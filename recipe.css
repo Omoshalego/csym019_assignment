@@ -1,23 +1,23 @@
-/* week3_part a exercises */
-       
+
 header {
-    background-color: #555;
+    background-color: blue;
     color: white;
-    padding: 10px;
-    grid-area: header;
-}
+    padding: 1em;
+    
+    }
     nav {
-    background-color: yellow;
+    background-color:  darkgreen;;
    overflow: auto;
       
     }
 
-    .navs {
+    nav a {
        display: block;
        float: left;
-       width: 380px; 
+       width: 120px; 
        padding: 1em; 
        text-align: center;
+       color: white;
         }
      div{
             overflow: auto;
@@ -42,8 +42,8 @@ header {
     }
     
     footer {
-        padding-top: 2em;
-        background-color: #555;
-        color: white;
-        grid-area: footer;
+    background-color: darkgreen;
+    padding: 1em;
+    color: white;
+
     }
