@@ -2,13 +2,13 @@
    
 	"recipe":[
 	    {
-	         "title":"Rhubarb & gingernut cheesecake",
+	         "title":"Rhubar & gingernut cheesecake",
 	        "prep":20,
 	        "Easy":"More effort",
 	        "Serves":"8-10",
 	        "Cook": 25,
 			"Image": "Resources/RecipeIcons/breakfast.png",
-			"Nutrition per serve":[
+			"Nutrition_per_serve":[
              {
 				 "kcal":466,
 				 "fat":34,

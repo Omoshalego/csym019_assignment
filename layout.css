@@ -15,7 +15,7 @@ header {
 }
 
 nav {
-    background-color: whitesmoke;
+    background-color: rgb(62, 160, 66);
     color: black;
     grid-area: nav;
 }
@@ -52,12 +52,12 @@ main {
     grid-area: main;
 }
 
-footer {
+/* footer {
     padding-top: 2em;
     background-color: #555;
     color: white;
     grid-area: footer;
-}
+} */
 
 .note {
     color: red;
