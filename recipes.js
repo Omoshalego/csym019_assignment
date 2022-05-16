@@ -1,11 +1,13 @@
 
-//Javascript  file 
-$(document).ready(
+
+    //  START SERVER COMMAND   $ docker run -p 80:80 -v //C/CSYM019_ASSIGNMENT:/var/www/html -d muawya/csym019:websvr1.0            
+
+   $(document).ready(
   function updateRecipe(){
     setTimeout(
       function(){
         $.ajax({
-          url:"recipe.json",
+          url:"recipes.json",
           type:"GET",
           dataType:"json", //This tell the server that the file is json file
           success:function(response){  //this function is excuted if the connection to the server is succesful                     
@@ -74,6 +76,7 @@ $(document).ready(
             $("#info").html("<p>An error has occured</p>");
                     }
                 });
-            }, 2500);
+            }, 250);
         }) ();
+
 
