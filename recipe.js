@@ -1,4 +1,5 @@
 
+//Javascript  file 
 $(document).ready(
   function updateRecipe(){
     setTimeout(
@@ -31,14 +32,14 @@ $(document).ready(
                  arrayOfIngredient += "<tr><td>" + [i+1] +")  "+ //Printing the ingredients list in a table format.
                  ingredientOrder+"</td></tr>";
                     });
-               $.each(methodList, function(i, eachMethod) {
+               $.each(methodList, function(i, eachMethod) {   //Looping through the list of method to print individual method
                  methodOrder =eachMethod;                           
-                 arrayOfMethod +=  "<tr><td><strong>Step: " +[i +1]  +
+                 arrayOfMethod +=  "<tr><td><strong>Step: " +[i +1]  +   //Assigning  the method step in a recipe
                 "<strong></td></tr><tr><td>"+
-                 methodOrder+"</td></tr><br>";
+                 methodOrder+"</td></tr><br>";           //Printing the method array
                    });         
                  methods += "<tr><td><h3>Method </h3></td></tr>"+ arrayOfMethod;         
-                 nutritionOrder +=  
+                 nutritionOrder +=                  //Printing the various nutrition values
                   "<tr><td><h3>Nutritoin Per Serving </h3></td></tr>" +                             
                     "<tr>"+                   
                     "<td> <em>kcal: " +nutritionVal.kcal+"g "+                                
@@ -55,8 +56,8 @@ $(document).ready(
                      "</h2></td><td>"+                        
                        "<img src='" + response.recipe[index].Image + "'/></td></tr>" +
                        "<tr><td>"+  
-                        "Prep: "+ response.recipe[index].prep + " mins" +   
-                        "\t\tCook: "+response.recipe[index].Cook + " mins" + 
+                       "Prep: "+ response.recipe[index].prep + " mins" +   
+                       "\t\tCook: "+response.recipe[index].Cook + " mins" + 
                         "\t\tServes: "+response.recipe[index].Serves + 
                         "\t\tEasy: "+ response.recipe[index].Easy  +
                         "</td></tr>" +
@@ -65,14 +66,14 @@ $(document).ready(
                          nutritionOrder                          
                         });
                                              
-              $("#method").append(methods);
-              $("#recipe").append( recipeinfo);
-              updateRecipe();
+               $("#method").append(methods);
+               $("#recipe").append( recipeinfo);
+               updateRecipe();
                     },
          error:function(){
             $("#info").html("<p>An error has occured</p>");
                     }
                 });
-            }, 250);
+            }, 2500);
         }) ();
 
