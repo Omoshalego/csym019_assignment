@@ -4,7 +4,7 @@ $(document).ready(
     setTimeout(
       function(){
         $.ajax({
-          url:"recipeg.json",
+          url:"recipe.json",
           type:"GET",
           dataType:"json", //This tell the server that the file is json file
           success:function(response){  //this function is excuted if the connection to the server is succesful                     
