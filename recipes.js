@@ -40,18 +40,20 @@
                 "<strong></td></tr><tr><td>"+
                  methodOrder+"</td></tr><br>";           //Printing the method array
                    });         
-                 methods += "<tr><td><h3>Method </h3></td></tr>"+ arrayOfMethod;         
-                 nutritionOrder +=                  //Printing the various nutrition values
-                  "<tr><td><h3>Nutritoin Per Serving </h3></td></tr>" +                             
-                    "<tr>"+                   
-                    "<td> <em>kcal: " +nutritionVal.kcal+"g "+                                
-                    "\t\t\t\tfat: " + nutritionVal.fat+   "g"+
-                    "\t\t\t\t saturate: " + nutritionVal.saturate+   "g"+
-                    "\t\t\t\tCarbs: " + nutritionVal.carbs+   "g"+                  
-                    "\t\t\t\tsugars: " + nutritionVal.sugars+   "g"+
-                    "\t\t\t\tFibre: " + nutritionVal.fibre+   "g"+                  
-                    "\t\t\t\tProtein: " + nutritionVal.protein+   "g"+
-                    "\t\t\t\tSalt: " + nutritionVal.salt+   " g</em></td></tr>"
+                 methods += "<tr><td><h3>Method </h3></td></tr>"+ arrayOfMethod;  
+                        
+                //  nutritionOrder +=                  //Printing the various nutrition values
+                //   "<tr><td><h3>Nutritoin Per Serving </h3></td></tr>" +                             
+                //     "<tr>"+                   
+                //     "<td> <em>kcal: " +nutritionVal[index].kcal+"g "+                                
+                //     "\t\t\t\tfat: " + nutritionVal[index].fat+   "g"+
+                //     "\t\t\t\t saturate: " + nutritionVal[index].saturate+   "g"+
+                //     "\t\t\t\tCarbs: " + nutritionVal[index].carbs+   "g"+                  
+                //     "\t\t\t\tsugars: " + nutritionVal[index].sugars+   "g"+
+                //     "\t\t\t\tFibre: " + nutritionVal[index].fibre+   "g"+                  
+                //     "\t\t\t\tProtein: " + nutritionVal[index].protein+   "g"+
+                //     "\t\t\t\tSalt: " + nutritionVal[index].salt+   " g</em></td></tr>";
+
                  recipeinfo +=
                     "<tr class ='recipes'><td><h2>" +
                      response.recipe[index].title + 
@@ -64,8 +66,8 @@
                         "\t\tEasy: "+ response.recipe[index].Easy  +
                         "</td></tr>" +
                          "<tr><td><h3>Ingredient </h3></td></tr>" +
-                         arrayOfIngredient + 
-                         nutritionOrder                          
+                         arrayOfIngredient 
+                        // nutritionOrder                          
                         });
                                              
                $("#method").append(methods);
